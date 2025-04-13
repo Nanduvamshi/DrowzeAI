@@ -22,22 +22,6 @@ ML Models	joblib, scikit-learn (for SER model)
 TTS / Alerts	pyttsx3, Tkinter, playsound or pygame
 Control Logic	Python, threading, queue
 
-# Folder Structure
-DriveGuard-AI/
-├── audio/                          # Trained SER model and recorded clips
-│   └── speech_emotion_model.pkl
-├── modules/                        # Modularized feature logic
-│   ├── Detection.py                # Drowsiness detection logic
-│   ├── EAR.py / MAR.py            # Eye/Mouth aspect ratio calculators
-│   ├── facial_emotion.py          # DeepFace-based emotion detection
-│   ├── speech_emotion.py          # Audio-based SER
-│   ├── voice_commands.py          # Voice control logic
-│   └── alert_system.py            # Alert popups + TTS
-├── main.py                         # Main launcher (multithreaded)
-├── shape_predictor_68_face_landmarks.dat
-├── train_ser_model.py             # Train your own speech emotion model
-├── requirements.txt
-└── README.md
 
  # How to Run
 1. 📦 Install Requirements
